@@ -321,7 +321,7 @@
     <h1>Documentos legales, <em>bien hechos</em>, no solo bonitos.</h1>
     <p class="lede">Llena un formulario sencillo y ten tu documento listo en 3 minutos — sin trámites complicados, y con todos los requisitos que la ley exige ya incluidos.</p>
     <div class="hero-ctas">
-      <a href="#documentos" class="btn btn-primary">Ver los 14 documentos</a>
+      <a href="#documentos" class="btn btn-primary">Ver los 15 documentos</a>
       <a href="#como-funciona" class="btn btn-ghost">Cómo funciona</a>
     </div>
   </div>
@@ -339,7 +339,7 @@
       <div class="demo-input-row">
         <label for="demoInput">Prueba escribiendo el nombre del arrendatario</label>
         <input id="demoInput" type="text" placeholder="Ej. María Hernández López" autocomplete="off">
-        <p class="demo-hint">Así se llenan los 14 documentos — en vivo, sin recargar la página.</p>
+        <p class="demo-hint">Así se llenan los 15 documentos — en vivo, sin recargar la página.</p>
       </div>
     </div>
   </div>
@@ -500,12 +500,20 @@
       <a href="aviso-privacidad-info.html" style="font-size:12.5px;font-weight:600;color:var(--wine);text-decoration:none;">Saber más →</a>
     </div>
 
+    <div class="explainer-card">
+      <div class="doc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6.5 4.2"/></svg></div>
+      <span class="explainer-cat">Financiero</span>
+      <h3>Asociación en participación</h3>
+      <p>Cuando alguien aporta dinero, bienes o trabajo a tu negocio a cambio de un porcentaje de las ganancias, sin necesidad de crear una empresa nueva juntos.</p>
+      <a href="asociacion-participacion-info.html" style="font-size:12.5px;font-weight:600;color:var(--wine);text-decoration:none;">Saber más →</a>
+    </div>
+
   </div>
 </section>
 
 <section class="block" id="documentos">
   <div class="block-head">
-    <h2>Catorce documentos, cuatro categorías</h2>
+    <h2>Quince documentos, cuatro categorías</h2>
     <p>Busca por nombre o filtra por materia. Cada tarjeta abre el generador correspondiente, listo para llenar.</p>
   </div>
 
@@ -613,6 +621,7 @@ const DOCS = [
   { file:'carta-poder.html', cat:'tramites', title:'Carta poder', desc:'Poder especial para un trámite concreto, con testigos.' },
   { file:'declaracion-jurada.html', cat:'tramites', title:'Declaración jurada', desc:'Domicilio, ingresos, dependientes o estado civil, bajo protesta.' },
   { file:'aviso-privacidad.html', cat:'tramites', title:'Aviso de privacidad', desc:'Obligatorio si tu negocio recaba datos personales de clientes, con las 6 fracciones que exige la ley.' },
+  { file:'asociacion-participacion.html', cat:'financiero', title:'Asociación en participación', desc:'Asóciate en un negocio sin crear una empresa nueva, con reparto de utilidades y pérdidas.' },
 ];
 
 const CAT_COLORS = { civil:'#7a2e3d', laboral:'#2f6b4f', financiero:'#a9824f', tramites:'#4a5160' };

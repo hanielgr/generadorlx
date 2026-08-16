@@ -564,12 +564,12 @@ const PAYWALL_PRICE_MXN = 199;
 const PAYWALL_PRODUCT_LABEL = 'Compraventa de vehículo';
 
 function isPaid(){
-  return localStorage.getItem('paid_' + PAYWALL_DOC_ID) === '1';
+  return sessionStorage.getItem('paid_' + PAYWALL_DOC_ID) === '1';
 }
 function checkPaidFromURL(){
   const params = new URLSearchParams(window.location.search);
   if(params.get('paid') === '1' && params.get('doc') === PAYWALL_DOC_ID){
-    localStorage.setItem('paid_' + PAYWALL_DOC_ID, '1');
+    sessionStorage.setItem('paid_' + PAYWALL_DOC_ID, '1');
     window.history.replaceState({}, '', window.location.pathname);
   }
 }
